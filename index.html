@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
 </head>
 <body>
-    <h1>First Commit</h1>
+
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <div class="hero-page">
+            <input type="text" placeholder="  Click here to add a Task" class="txt">
+
+            <div class="Not ">
+                <h3>Not Completed</h3>
+               
+            </div>
+
+            <!--Completed Task Section-->
+            <div class="completed">
+                <h3>Completed Task</h3>
+        
+            </div>
+        </div>
+        <script src="jquery-3.5.1.min.js"></script>
+
+<script >
+  $(document).ready(function(){
+     $(".txt").on("keyup",function(e){
+         if (e.keyCode == 13 && $(".txt").val()  != ""){
+             var task = $("<div class='task'></div>").text($(".txt").val());
+            
+             var del = $("<i class= 'fas fa-trash-alt'></i>").click(function(){
+                 var p = $(this).parent();
+                 p.fadeOut(function(){
+                     p.remove();
+                 });
+             });
+             var check = $("<i class =' fas fa-check '</i>").click(function(){
+                 var p = $(this).parent();
+                 $(".completed").append(p);
+                 p.fadein();
+             });
+
+             task.append(del,check);
+             $(".Not").append(task);
+             /*To clear the input*/
+             $(".txt").val("");
+             
+         }
+     });
+  });
+</script>
+
+<footer>
+    Abubakar Ali &copy 2020
+</footer>
+        
+    
 </body>
 </html>
