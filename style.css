@@ -9,9 +9,11 @@
 }
 
 .container{
-    background: #5A3F37;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #4DA0B0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
     height: 100vh;
     padding: 10px;
 }
@@ -62,12 +64,4 @@ padding-top: 10px;
 }
 ::placeholder{
     color: rgb(216, 212, 212);
-}
-
-footer{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 20px;
-    color: aliceblue;
 }
