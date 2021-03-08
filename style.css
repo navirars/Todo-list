@@ -36,7 +36,7 @@ h1{
     padding: 10px;
     height: 100vh;
 
-    
+
 
 }
 
@@ -50,7 +50,7 @@ padding-top: 10px;
     background-color:rgba(255, 255, 255, 0.5);
     padding: 18px;
 
-    
+
 }
 
 .task i{
@@ -66,4 +66,12 @@ padding-top: 10px;
 ::placeholder{
     color: rgb(216, 212, 212);
     font-size: 1.1rem;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
+
+i:active {
+  transform: scale(1.1);
 }
